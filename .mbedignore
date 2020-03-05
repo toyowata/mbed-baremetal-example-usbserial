@@ -1,1 +1,2 @@
 mbed-os/drivers/USB*.h
+mbed-os/targets/TARGET_NXP/USBHAL_LPC17.cpp

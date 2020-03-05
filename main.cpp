@@ -15,11 +15,13 @@ USBSerial usbs;
 
 int main()
 {
+    int cnt = 0;
     // Initialise the digital pin LED1 as an output
     DigitalOut led(LED1);
     usbs.printf("hello, USBDevice\n");
 
     while (true) {
+        usbs.printf("%d\n", cnt++);
         led = !led;
         thread_sleep_for(BLINKING_RATE_MS);
     }
